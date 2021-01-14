@@ -1,0 +1,205 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0BC6B805-900F-471B-8366-CE51A2DEE6B4}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>gestion_malades</RootNamespace>
+    <AssemblyName>gestion_malades</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormulaireConnexion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireConnexion.Designer.cs">
+      <DependentUpon>FormulaireConnexion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormMalades.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormMalades.Designer.cs">
+      <DependentUpon>FormMalades.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireBonAnalyse.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireBonAnalyse.Designer.cs">
+      <DependentUpon>FormulaireBonAnalyse.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireConsultation.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireConsultation.Designer.cs">
+      <DependentUpon>FormulaireConsultation.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireInfirmier.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireInfirmier.Designer.cs">
+      <DependentUpon>FormulaireInfirmier.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireMedecin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireMedecin.Designer.cs">
+      <DependentUpon>FormulaireMedecin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireOrdonnance.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireOrdonnance.Designer.cs">
+      <DependentUpon>FormulaireOrdonnance.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireOrdonnanceMedicale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireOrdonnanceMedicale.Designer.cs">
+      <DependentUpon>FormulaireOrdonnanceMedicale.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulairePrescription.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulairePrescription.Designer.cs">
+      <DependentUpon>FormulairePrescription.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormulaireResultatLabo.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormulaireResultatLabo.Designer.cs">
+      <DependentUpon>FormulaireResultatLabo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ForulaireProduit.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="ForulaireProduit.Designer.cs">
+      <DependentUpon>ForulaireProduit.cs</DependentUpon>
+    </Compile>
+    <Compile Include="gestion_maladesDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>gestion_maladesDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="MenuPrincipal.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="MenuPrincipal.Designer.cs">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="FormulaireConnexion.resx">
+      <DependentUpon>FormulaireConnexion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormMalades.resx">
+      <DependentUpon>FormMalades.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireBonAnalyse.resx">
+      <DependentUpon>FormulaireBonAnalyse.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireConsultation.resx">
+      <DependentUpon>FormulaireConsultation.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireInfirmier.resx">
+      <DependentUpon>FormulaireInfirmier.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireMedecin.resx">
+      <DependentUpon>FormulaireMedecin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireOrdonnance.resx">
+      <DependentUpon>FormulaireOrdonnance.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireOrdonnanceMedicale.resx">
+      <DependentUpon>FormulaireOrdonnanceMedicale.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulairePrescription.resx">
+      <DependentUpon>FormulairePrescription.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormulaireResultatLabo.resx">
+      <DependentUpon>FormulaireResultatLabo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="ForulaireProduit.resx">
+      <DependentUpon>ForulaireProduit.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MenuPrincipal.resx">
+      <DependentUpon>MenuPrincipal.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="gestion_maladesDataSet.xsc">
+      <DependentUpon>gestion_maladesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="gestion_maladesDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>gestion_maladesDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="gestion_maladesDataSet.xss">
+      <DependentUpon>gestion_maladesDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
